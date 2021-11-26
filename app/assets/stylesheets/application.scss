@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap";
+
+.navbar-brand{
+	margin-left: 270px;
+}
+
+.new-post{
+	margin-right: 300px;
+}
