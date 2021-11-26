@@ -1,24 +1,10 @@
-# README
+#メモ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##動画のアップロードに使用するgem⇒carrierwave
+###↑使用の際は以下をモデルに記述する。↓
+###mount_uploader :video, VideoUploader
+###動画投稿フォーム↓
+###<%= form.file_field :video %>
+###動画表示↓
+####<iframe width="1024" height="576" src="<%= @post.video.to_s %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
